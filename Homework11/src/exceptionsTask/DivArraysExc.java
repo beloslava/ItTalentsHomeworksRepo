@@ -29,7 +29,7 @@ public class DivArraysExc {
 			try {
 				a3[i] = a1[i] / a2[i];
 			} catch (ArithmeticException x) {
-				// a3[i] = 0;
+				
 			}
 
 		}
