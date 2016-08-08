@@ -7,7 +7,7 @@ public class Count {
 
 	public static void main(String[] args) {
 
-		String str = "His name is Slim Shady!";
+		String str = "My name is Slim Shady!";
 		symbols(str);
 	}
 
@@ -30,7 +30,7 @@ public class Count {
 			helper[str.charAt(i) - arrMin]++;
 		}
 
-		int number = 0;
+		int num = 0;
 		// ArrayList<Integer> list = new ArrayList<>();
 		//
 		// for (Integer integer : helper) {
@@ -39,8 +39,8 @@ public class Count {
 		for (int i = 0; i < helper.length; i++) {
 			if (helper[i] > 0 && (i + arrMin) > 64 && (i + arrMin) < 91) {
 				System.out.print((char) (i + arrMin) + ": " + helper[i] + " ");
-				number = (100 / str.length()) * helper[i];
-				for (int j = 0; j < number; j++) {
+				num = (100 / str.length()) * helper[i];
+				for (int j = 0; j < num; j++) {
 					System.out.print("#");
 				}
 				System.out.println();
