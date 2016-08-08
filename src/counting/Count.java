@@ -31,11 +31,7 @@ public class Count {
 		}
 
 		int num = 0;
-		// ArrayList<Integer> list = new ArrayList<>();
-		//
-		// for (Integer integer : helper) {
-		// list.add(integer);
-		// }
+	
 		for (int i = 0; i < helper.length; i++) {
 			if (helper[i] > 0 && (i + arrMin) > 64 && (i + arrMin) < 91) {
 				System.out.print((char) (i + arrMin) + ": " + helper[i] + " ");
